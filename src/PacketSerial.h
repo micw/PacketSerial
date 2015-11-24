@@ -74,6 +74,11 @@ public:
         }
     }
 
+    void begin(Stream* stream)
+    {
+        _serial = stream;
+    }
+
     void update()
     {
         if (_serial == 0) return;
